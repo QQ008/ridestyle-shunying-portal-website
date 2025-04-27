@@ -1,0 +1,364 @@
+ /* Vision Page Styles
+============================================ */
+.vision-hero {
+    padding-top: calc(var(--header-height) + 60px);
+    padding-bottom: 80px;
+    background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+    color: white;
+    text-align: center;
+}
+
+.vision-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.vision-hero .highlight {
+    color: var(--primary-color);
+}
+
+.vision-hero p {
+    font-size: 1.25rem;
+    margin: 0 auto;
+    max-width: 800px;
+    opacity: 0.9;
+}
+
+/* Mission, Vision, Values Cards */
+.vision-mission {
+    background-color: white;
+    padding: 80px 0;
+}
+
+.vision-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.vision-card {
+    background-color: #fff;
+    border-radius: var(--border-radius-md);
+    padding: 40px 30px;
+    box-shadow: var(--shadow-md);
+    text-align: center;
+    transition: all var(--transition-normal);
+}
+
+.vision-card:hover {
+    transform: translateY(-10px);
+}
+
+.vision-card:nth-child(1) {
+    border-top: 5px solid var(--primary-color);
+}
+
+.vision-card:nth-child(2) {
+    border-top: 5px solid var(--accent-color);
+}
+
+.vision-card:nth-child(3) {
+    border-top: 5px solid var(--success-color);
+}
+
+.vision-card h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
+}
+
+.vision-icon {
+    font-size: 3rem;
+    margin-bottom: 25px;
+    color: var(--text-light);
+}
+
+.vision-card:nth-child(1) .vision-icon {
+    color: var(--primary-color);
+}
+
+.vision-card:nth-child(2) .vision-icon {
+    color: var(--accent-color);
+}
+
+.vision-card:nth-child(3) .vision-icon {
+    color: var(--success-color);
+}
+
+.vision-card p {
+    color: var(--text-light);
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+/* Strategic Goals Timeline */
+.vision-goals {
+    background-color: var(--light-color);
+    padding: 80px 0;
+}
+
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    width: 3px;
+    background-color: var(--primary-color);
+    top: 0;
+    bottom: 0;
+    left: 120px;
+    margin-left: -1px;
+}
+
+.timeline-item {
+    display: flex;
+    position: relative;
+    margin-bottom: 80px;
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-date {
+    min-width: 120px;
+    text-align: right;
+    padding-right: 30px;
+    position: relative;
+}
+
+.timeline-date span {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.timeline-dot {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    right: -10px;
+    top: 10px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+    z-index: 1;
+}
+
+.timeline-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: var(--border-radius-md);
+    box-shadow: var(--shadow-sm);
+    flex: 1;
+    transition: all var(--transition-normal);
+}
+
+.timeline-content:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.timeline-content h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--dark-color);
+}
+
+.timeline-content p {
+    color: var(--text-light);
+    margin-bottom: 20px;
+}
+
+.timeline-goals {
+    list-style: none;
+}
+
+.timeline-goals li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.timeline-goals li i {
+    color: var(--success-color);
+    margin-right: 10px;
+}
+
+/* Technology Vision */
+.vision-technology {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: white;
+    padding: 80px 0;
+}
+
+.section-header.light h2,
+.section-header.light p {
+    color: white;
+}
+
+.section-header.light h2::after {
+    background-color: white;
+}
+
+.tech-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+
+.tech-item {
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius-md);
+    padding: 30px;
+    transition: all var(--transition-normal);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.tech-item:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+    transform: translateY(-10px);
+}
+
+.tech-icon {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: white;
+}
+
+.tech-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.tech-item p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Team Values */
+.team-values {
+    background-color: white;
+    padding: 80px 0;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.value-item {
+    background-color: #fff;
+    border-radius: var(--border-radius-md);
+    padding: 30px;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+    border-left: 4px solid var(--primary-color);
+}
+
+.value-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.value-item:nth-child(2) {
+    border-left-color: var(--secondary-color);
+}
+
+.value-item:nth-child(3) {
+    border-left-color: var(--accent-color);
+}
+
+.value-item:nth-child(4) {
+    border-left-color: var(--success-color);
+}
+
+.value-item:nth-child(5) {
+    border-left-color: var(--warning-color);
+}
+
+.value-item:nth-child(6) {
+    border-left-color: var(--danger-color);
+}
+
+.value-icon {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+}
+
+.value-item:nth-child(2) .value-icon {
+    color: var(--secondary-color);
+}
+
+.value-item:nth-child(3) .value-icon {
+    color: var(--accent-color);
+}
+
+.value-item:nth-child(4) .value-icon {
+    color: var(--success-color);
+}
+
+.value-item:nth-child(5) .value-icon {
+    color: var(--warning-color);
+}
+
+.value-item:nth-child(6) .value-icon {
+    color: var(--danger-color);
+}
+
+.value-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.value-item p {
+    color: var(--text-light);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .vision-hero h1 {
+        font-size: 2.5rem;
+    }
+    
+    .timeline::before {
+        left: 30px;
+    }
+    
+    .timeline-item {
+        flex-direction: column;
+    }
+    
+    .timeline-date {
+        min-width: auto;
+        text-align: left;
+        padding-left: 60px;
+        padding-right: 0;
+        margin-bottom: 20px;
+    }
+    
+    .timeline-dot {
+        left: 30px;
+        right: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .vision-hero h1 {
+        font-size: 2rem;
+    }
+    
+    .vision-card h2 {
+        font-size: 1.8rem;
+    }
+    
+    .vision-icon {
+        font-size: 2.5rem;
+    }
+}

@@ -1,0 +1,11 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+<svg width="100" height="100" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .logo-circle { fill: #3498db; }
+    .logo-flash { fill: white; }
+    .logo-bike { fill: white; }
+  </style>
+  <circle class="logo-circle" cx="50" cy="50" r="45"/>
+  <path class="logo-flash" d="M65,25 L45,50 L55,50 L35,75 L40,55 L30,55 L50,25 Z"/>
+  <path class="logo-bike" d="M28,60 C28,65.5 23.5,70 18,70 C12.5,70 8,65.5 8,60 C8,54.5 12.5,50 18,50 C23.5,50 28,54.5 28,60 Z M80,60 C80,65.5 75.5,70 70,70 C64.5,70 60,65.5 60,60 C60,54.5 64.5,50 70,50 C75.5,50 80,54.5 80,60 Z M44,40 L60,40 L70,60 M44,40 L55,60 M30,40 L44,40 L36,60"/>
+</svg>

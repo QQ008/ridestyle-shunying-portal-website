@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>开发者社区 - 瞬影 - 骑行摄影平台</title>
+    <meta name="description" content="瞬影开发者社区，了解技术架构，获取API文档，参与项目开发">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/developers.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="site-header">
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.svg" alt="瞬影" class="logo-img">
+                    <span class="logo-text">瞬影</span>
+                </a>
+            </div>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="index.html">首页</a></li>
+                    <li><a href="join.html">加入我们</a></li>
+                    <li><a href="vision.html">目标愿景</a></li>
+                    <li><a href="developers.html" class="active">开发者社区</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <i class="bi bi-list"></i>
+            </div>
+        </div>
+    </header>
+
+    <section class="dev-hero">
+        <div class="container">
+            <div class="dev-hero-content">
+                <h1>瞬影<span class="highlight">开发者社区</span></h1>
+                <p>了解我们的技术架构，获取API文档，参与项目开发</p>
+                <div class="dev-hero-buttons">
+                    <a href="#tech-stack" class="btn btn-primary">技术栈</a>
+                    <a href="#api-docs" class="btn btn-outline">API文档</a>
+                    <a href="#dev-guide" class="btn btn-outline">开发指南</a>
+                </div>
+            </div>
+            <div class="dev-hero-image">
+                <img src="images/dev-hero.svg" alt="开发者">
+            </div>
+        </div>
+    </section>
+
+    <section id="tech-stack" class="tech-stack">
+        <div class="container">
+            <div class="section-header">
+                <h2>技术栈</h2>
+                <p>瞬影项目采用现代化的技术栈，注重性能、可扩展性与开发效率</p>
+            </div>
+            <div class="tech-stack-grid">
+                <div class="tech-stack-item">
+                    <div class="tech-stack-header">
+                        <i class="bi bi-window"></i>
+                        <h3>前端技术</h3>
+                    </div>
+                    <ul class="tech-list">
+                        <li>
+                            <span class="tech-name">Vue 3</span>
+                            <span class="tech-desc">渐进式JavaScript框架，用于构建用户界面</span>
+                        </li>
+                        <li>
+                            <span class="tech-name">TypeScript</span>
+                            <span class="tech-desc">提供类型系统，增强代码可靠性与开发体验</span>
+                        </li>
+                        <li>
+                            <span class="tech-name">Vite</span>
+                            <span class="tech-desc">下一代前端构建工具，提供极速的开发体验</span>
+                        </li>
+                        <li>
+                            <span class="tech-name">TailwindCSS</span>
+                            <span class="tech-desc">实用优先的CSS框架，用于快速构建现代化界面</span>
+                        </li>
+                        <li>
+                            <span class="tech-name">Pinia</span>
+                            <span class="tech-desc">Vue的状态管理库，简单直观且类型安全</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tech-stack-item">
+                    <div class="tech-stack-header">
+                        <i class="bi bi-server"></i>
+                        <h3>后端技术</h3>
+                    </div>
+                    <ul class="tech-list">
+                        <li>
+                            <span class="tech-name">Nest.js</span>
+                            <span class="tech-desc">进步的Node.js框架，用于构建高效、可靠的服务器端应用</span>
+                        </li>
+                        <li>
+                            <span class="tech-name">TypeScript</span>
+                            <span class="tech-desc">提供强类型系统，确保API接口的可靠性</span>
+                        </li>
+                        <li>
+                            <span class="tech-name">PostgreSQL</span>
+                            <span class="tech-desc">先进的开源关系型数据库，支持复杂查询和地理信息</span>
+                        </li>
+                        <li>
+                            <span class="tech-name">Redis</span>
+                            <span class="tech-desc">内存数据结构存储，用于缓存和会话管理</span>
+                        </li>
+                        <li>
+                            <span class="tech-name">MinIO</span>
+                            <span class="tech-desc">高性能对象存储服务，用于存储和管理照片资源</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tech-stack-item">
+                    <div class="tech-stack-header">
+                        <i class="bi bi-cpu"></i>
+                        <h3>AI & 图像处理</h3>
+                    </div>
+                    <ul class="tech-list">
+                        <li>
+                            <span class="tech-name">Python</span>
+                            <span class="tech-desc">主要用于AI模型训练与图像处理服务</span>
+                        </li>
+                        <li>
+                            <span class="tech-name">YOLO v11</span>
+                            <span class="tech-desc">用于实时目标检测，识别骑行者与自行车</span>
+                        </li>
+                        <li>
+                            <span class="tech-name">OpenCV</span>
+                            <span class="tech-desc">开源计算机视觉库，用于图像处理与分析</span>
+                        </li>
+                        <li>
+                            <span class="tech-name">TensorFlow</span>
+                            <span class="tech-desc">用于构建和训练骑行者识别模型</span>
+                        </li>
+                        <li>
+                            <span class="tech-name">FastAPI</span>
+                            <span class="tech-desc">现代、高性能的Python API框架，用于图像处理服务</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="tech-stack-item">
+                    <div class="tech-stack-header">
+                        <i class="bi bi-clouds"></i>
+                        <h3>DevOps & 基础设施</h3>
+                    </div>
+                    <ul class="tech-list">
+                        <li>
+                            <span class="tech-name">Docker</span>
+                            <span class="tech-desc">容器化技术，确保开发与生产环境一致性</span>
+                        </li>
+                        <li>
+                            <span class="tech-name">Kubernetes</span>
+                            <span class="tech-desc">容器编排系统，用于管理分布式应用</span>
+                        </li>
+                        <li>
+                            <span class="tech-name">GitHub Actions</span>
+                            <span class="tech-desc">CI/CD流程自动化，确保代码质量与快速部署</span>
+                        </li>
+                        <li>
+                            <span class="tech-name">Prometheus & Grafana</span>
+                            <span class="tech-desc">监控系统，用于跟踪系统性能与健康状态</span>
+                        </li>
+                        <li>
+                            <span class="tech-name">阿里云</span>
+                            <span class="tech-desc">云服务提供商，提供稳定、可扩展的基础设施</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="architecture" class="architecture">
+        <div class="container">
+            <div class="section-header">
+                <h2>系统架构</h2>
+                <p>瞬影采用微服务架构，各组件独立部署，提高系统可靠性与可扩展性</p>
+            </div>
+            <div class="architecture-diagram">
+                <img src="images/architecture.svg" alt="系统架构图">
+            </div>
+            <div class="architecture-description">
+                <div class="arch-component">
+                    <h3>前端应用</h3>
+                    <p>包括用户端移动应用和摄影师管理后台，采用Vue.js构建，通过API网关与后端服务交互</p>
+                </div>
+                <div class="arch-component">
+                    <h3>API网关</h3>
+                    <p>统一的API入口，负责请求路由、负载均衡、认证授权、限流等功能</p>
+                </div>
+                <div class="arch-component">
+                    <h3>核心服务</h3>
+                    <p>包括用户服务、照片管理服务、交易服务等，每个服务独立部署，通过消息队列异步通信</p>
+                </div>
+                <div class="arch-component">
+                    <h3>AI服务</h3>
+                    <p>提供图像识别、废片筛选、骑行者匹配等AI能力，独立扩展，通过异步任务处理大规模图像</p>
+                </div>
+                <div class="arch-component">
+                    <h3>存储层</h3>
+                    <p>包括关系型数据库、对象存储和缓存系统，确保数据安全和高效访问</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="api-docs" class="api-docs">
+        <div class="container">
+            <div class="section-header">
+                <h2>API文档</h2>
+                <p>瞬影提供丰富的API接口，满足不同集成场景的需求</p>
+            </div>
+            <div class="api-tabs">
+                <div class="api-tab active" data-tab="photographer">摄影师API</div>
+                <div class="api-tab" data-tab="user">用户API</div>
+                <div class="api-tab" data-tab="admin">管理API</div>
+            </div>
+            <div class="api-content">
+                <div class="api-content-item active" id="photographer-api">
+                    <div class="api-endpoint">
+                        <div class="endpoint-method">POST</div>
+                        <div class="endpoint-path">/api/v1/photographer/photos/upload</div>
+                    </div>
+                    <div class="endpoint-desc">
+                        <h4>上传照片</h4>
+                        <p>摄影师上传照片到平台，支持批量上传和基本元数据设置</p>
+                        <div class="code-block">
+                            <pre><code>// 请求示例
+POST /api/v1/photographer/photos/upload
+Content-Type: multipart/form-data
+Authorization: Bearer {token}
+
+{
+  "photos": [file1, file2, ...],
+  "metadata": {
+    "location": "北京奥森公园",
+    "event": "周末骑行",
+    "shootingDate": "2024-05-20",
+    "shootingTime": "08:30-10:30"
+  }
+}</code></pre>
+                        </div>
+                        <div class="code-block">
+                            <pre><code>// 响应示例
+{
+  "success": true,
+  "data": {
+    "uploadedCount": 24,
+    "failedCount": 0,
+    "processingTaskId": "task-12345",
+    "estimatedProcessingTime": "2分钟"
+  }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="api-content-item" id="user-api">
+                    <div class="api-endpoint">
+                        <div class="endpoint-method">GET</div>
+                        <div class="endpoint-path">/api/v1/user/photos/search</div>
+                    </div>
+                    <div class="endpoint-desc">
+                        <h4>搜索照片</h4>
+                        <p>用户根据多种条件搜索自己可能出现的照片</p>
+                        <div class="code-block">
+                            <pre><code>// 请求示例
+GET /api/v1/user/photos/search?date=2024-05-20&location=奥森&timeRange=08:30-10:30&bikeColor=red&helmetColor=white
+Authorization: Bearer {token}</code></pre>
+                        </div>
+                        <div class="code-block">
+                            <pre><code>// 响应示例
+{
+  "success": true,
+  "data": {
+    "total": 12,
+    "photos": [
+      {
+        "id": "photo-123",
+        "thumbnailUrl": "https://cdn.momentshot.com/thumbnails/abc.jpg",
+        "previewUrl": "https://cdn.momentshot.com/previews/abc.jpg",
+        "photographer": "张摄影",
+        "shootingTime": "2024-05-20 09:15",
+        "price": 15.00,
+        "discount": 0
+      },
+      // ...更多照片
+    ]
+  }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="api-content-item" id="admin-api">
+                    <div class="api-endpoint">
+                        <div class="endpoint-method">GET</div>
+                        <div class="endpoint-path">/api/v1/admin/statistics/revenue</div>
+                    </div>
+                    <div class="endpoint-desc">
+                        <h4>获取收益统计</h4>
+                        <p>管理员获取平台收益统计数据</p>
+                        <div class="code-block">
+                            <pre><code>// 请求示例
+GET /api/v1/admin/statistics/revenue?period=month&startDate=2024-05-01&endDate=2024-05-31
+Authorization: Bearer {adminToken}</code></pre>
+                        </div>
+                        <div class="code-block">
+                            <pre><code>// 响应示例
+{
+  "success": true,
+  "data": {
+    "totalRevenue": 12500.00,
+    "photographerRevenue": 11875.00,
+    "platformRevenue": 625.00,
+    "totalOrders": 187,
+    "totalPhotos": 215,
+    "averageOrderValue": 66.84,
+    "topPhotographers": [
+      {
+        "name": "张摄影",
+        "revenue": 3200.00,
+        "photosSold": 64
+      },
+      // ...更多摄影师
+    ]
+  }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="api-docs-cta">
+                <p>更多API文档请查看我们的开发者门户</p>
+                <a href="#" class="btn btn-primary">完整API文档</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="dev-guide" class="dev-guide">
+        <div class="container">
+            <div class="section-header">
+                <h2>开发指南</h2>
+                <p>快速上手瞬影项目开发</p>
+            </div>
+            <div class="guide-steps">
+                <div class="guide-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3>环境准备</h3>
+                        <p>首先确保您的开发环境已安装以下工具：</p>
+                        <ul>
+                            <li>Node.js v16+</li>
+                            <li>Docker & Docker Compose</li>
+                            <li>Git</li>
+                            <li>VSCode (推荐)</li>
+                            <li>Python 3.9+ (用于AI服务开发)</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="guide-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3>获取代码</h3>
+                        <div class="code-block">
+                            <pre><code>git clone https://github.com/momentshot/momentshot.git
+cd momentshot
+npm install</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="guide-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3>启动开发环境</h3>
+                        <div class="code-block">
+                            <pre><code># 启动依赖服务 (PostgreSQL, Redis, MinIO等)
+docker-compose up -d
+
+# 启动前端开发服务器
+npm run dev:web
+
+# 启动后端服务
+npm run dev:api</code></pre>
+                        </div>
+                    </div>
+                </div>
+                <div class="guide-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3>代码提交</h3>
+                        <p>我们使用GitFlow工作流，请按以下步骤提交代码：</p>
+                        <ol>
+                            <li>从main分支创建功能分支: <code>git checkout -b feature/your-feature</code></li>
+                            <li>开发完成后，提交代码: <code>git commit -m "feat: your feature description"</code></li>
+                            <li>推送到远程仓库: <code>git push origin feature/your-feature</code></li>
+                            <li>在GitHub上创建Pull Request，等待代码审核</li>
+                        </ol>
+                    </div>
+                </div>
+            </div>
+            <div class="dev-guide-cta">
+                <a href="#" class="btn btn-primary">详细开发文档</a>
+                <a href="#" class="btn btn-outline">贡献指南</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="open-source">
+        <div class="container">
+            <div class="section-header">
+                <h2>开源项目</h2>
+                <p>瞬影团队的部分技术组件已开源，欢迎社区贡献</p>
+            </div>
+            <div class="os-projects">
+                <div class="os-project">
+                    <h3>BikeRecognition</h3>
+                    <p>基于YOLO的自行车与骑行者识别模型，能够在复杂背景下准确检测骑行者</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="bi bi-github"></i> GitHub
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="bi bi-book"></i> 文档
+                        </a>
+                    </div>
+                </div>
+                <div class="os-project">
+                    <h3>ImageQualityDetection</h3>
+                    <p>图像质量评估工具，能自动检测模糊、曝光不足等问题，筛选废片</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="bi bi-github"></i> GitHub
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="bi bi-book"></i> 文档
+                        </a>
+                    </div>
+                </div>
+                <div class="os-project">
+                    <h3>Vue-PhotoGallery</h3>
+                    <p>高性能Vue照片画廊组件，支持虚拟滚动、懒加载、手势操作等</p>
+                    <div class="project-links">
+                        <a href="#" class="project-link">
+                            <i class="bi bi-github"></i> GitHub
+                        </a>
+                        <a href="#" class="project-link">
+                            <i class="bi bi-book"></i> 文档
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>加入瞬影开发者社区</h2>
+                <p>无论您是前端开发、后端工程师还是AI研究者，我们都欢迎您的加入和贡献</p>
+                <div class="cta-buttons">
+                    <a href="join.html#developer-form" class="btn btn-primary">申请加入</a>
+                    <a href="https://github.com/momentshot" class="btn btn-outline">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-logo">
+                    <img src="images/logo.svg" alt="瞬影" class="logo-img">
+                    <span class="logo-text">瞬影</span>
+                    <p>骑行摄影解决方案</p>
+                </div>
+                <div class="footer-links">
+                    <h4>导航</h4>
+                    <ul>
+                        <li><a href="index.html">首页</a></li>
+                        <li><a href="join.html">加入我们</a></li>
+                        <li><a href="vision.html">目标愿景</a></li>
+                        <li><a href="developers.html">开发者社区</a></li>
+                    </ul>
+                </div>
+                <div class="footer-links">
+                    <h4>资源</h4>
+                    <ul>
+                        <li><a href="#">API文档</a></li>
+                        <li><a href="#">摄影师后台</a></li>
+                        <li><a href="#">常见问题</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h4>联系我们</h4>
+                    <p><i class="bi bi-envelope"></i> <a href="mailto:contact@momentshot.com">contact@momentshot.com</a></p>
+                    <div class="social-icons">
+                        <a href="#"><i class="bi bi-wechat"></i></a>
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 瞬影. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/developers.js"></script>
+</body>
+</html>
